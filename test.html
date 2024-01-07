@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="test.css">
+
+</head>
+<body>
+    <form action="test.php" method="post">
+        <div><h1>Booking Form</h1> <br>
+        Full Name: <input type="text" name="fname" id="fname" placeholder="Enter your full name" required> <br><br>
+        Email: <input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
+        Mobile No. <input type="number" name="contact" id="contact" placeholder="Enter your phone no." required><br><br>
+        Event Address: <input name="address" id="address" cols="30" rows="1" placeholder="Enter your address" required></input><br><br>
+        Choose Event: <select name="event" required>
+            <option value="" selected hidden>Select your event</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Birthday">Birthday</option>
+            <option value="Concerts">Concerts</option>
+            <option value="Meetings">Meetings</option>
+            <option value="Ohters">Ohters</option><br>
+        </select><br><br>
+        Booking Date: <input type="date" name="bdate" id="bdate" required><br><br>
+        Date of Event: <input type="date" name="cdate" id="cdate" required><br><br>
+        Payment Method: <input type="radio" name="payment" id="bkash" value="Bkash" required> Bkash <br> &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+        <input type="radio" name="payment" id="rocket" value="Rocket"> Rocket <br>
+        <div style="text-align:center; margin:15px"><input type="submit" onclick="validation()"></div>
+    </div>
+    </form>
+    <script src="./alert.js"></script>
+</body>
+</html>
